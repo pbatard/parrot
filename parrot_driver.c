@@ -217,7 +217,6 @@ static int __init parrot_module_init(void)
 	return 0;
 
 failed_devreg:
-	class_unregister(parrot_class);
 	class_destroy(parrot_class);
 failed_classreg:
 	unregister_chrdev(parrot_major, DEVICE_NAME);
@@ -231,7 +230,6 @@ static void __exit parrot_module_exit(void)
 	device_remove_file(parrot_device, &dev_attr_fifo);
 	device_remove_file(parrot_device, &dev_attr_reset);
 	device_destroy(parrot_class, MKDEV(parrot_major, 0));
-	class_unregister(parrot_class);
 	class_destroy(parrot_class);
 	unregister_chrdev(parrot_major, DEVICE_NAME);
 }
