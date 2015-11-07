@@ -21,6 +21,7 @@ see the following [blog post](http://pete.akeo.ie/2011/08/writing-linux-device-d
   * `cat /dev/parrot_device`
 
 * __Notes__:
+
 On a Debian system, and if you haven't recompiled a kernel before, you may
 have to issue the following before you can compile and run the driver:
 ```

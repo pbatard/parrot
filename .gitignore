@@ -30,3 +30,11 @@
 
 # Debug files
 *.dSYM/
+
+# Other files
+*.cmd
+.tmp_versions
+parrot_driver.mod.c
+modules.order
+Module.symvers
+
