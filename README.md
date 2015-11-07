@@ -1,8 +1,8 @@
 Parrot Linux device driver sample
 =================================
 
-This is a GPLv2+ sample implementation of a Linux 3.x or 2.x character
-device driver based on [udev](https://en.wikipedia.org/wiki/Udev).
+This is a GPLv2+ sample implementation of a character device driver
+for Linux 2.6 and later, based on [udev](https://en.wikipedia.org/wiki/Udev).
 
 From more background information as well as a detailed walkthrough, 
 see the following [blog post](http://pete.akeo.ie/2011/08/writing-linux-device-driver-for-kernels.html).

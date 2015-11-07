@@ -1,7 +1,7 @@
 /*
- * Linux 2.6 and 3.0 'parrot' sample device driver
+ * Linux 2.6 and later 'parrot' sample device driver
  *
- * Copyright (c) 2011, Pete Batard <pete@akeo.ie>
+ * Copyright (c) 2011-2015, Pete Batard <pete@akeo.ie>
  *
  *
  * This program is free software; you can redistribute it and/or modify
