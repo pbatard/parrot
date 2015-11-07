@@ -56,7 +56,7 @@ module_param(debug, bool, S_IRUGO | S_IWUSR);
 MODULE_PARM_DESC(debug, "enable debug info (default: false)");
 static bool one_shot = true;	/* only read a single message after open() */
 module_param(one_shot, bool, S_IRUGO | S_IWUSR);
-MODULE_PARM_DESC(debug, "disable the readout of multiple messages at once (default: true)");
+MODULE_PARM_DESC(one_shot, "disable the readout of multiple messages at once (default: true)");
 
 
 static int parrot_device_open(struct inode* inode, struct file* filp)
