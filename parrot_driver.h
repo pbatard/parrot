@@ -25,7 +25,7 @@
 
 #define AUTHOR "Pete Batard <pete@akeo.ie>"
 #define DESCRIPTION "'parrot' sample device driver"
-#define VERSION "0.3"
+#define VERSION "1.2"
 
 /* We'll use our own macros for printk */
 #define dbg(format, arg...) do { if (debug) pr_info(CLASS_NAME ": %s: " format , __FUNCTION__ , ## arg); } while (0)

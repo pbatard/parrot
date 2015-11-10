@@ -4,23 +4,30 @@ Parrot Linux device driver sample
 This is a GPLv2+ sample implementation of a character device driver
 for Linux 2.6 and later, based on [udev](https://en.wikipedia.org/wiki/Udev).
 
-From more background information as well as a detailed walkthrough, 
-see the following [blog post](http://pete.akeo.ie/2011/08/writing-linux-device-driver-for-kernels.html).
+For more background information as well as a detailed source walkthrough, see
+the following [blog post](http://pete.akeo.ie/2011/08/writing-linux-device-driver-for-kernels.html).
 
-* __Requirements__:
-  * gcc
-  * A recent Linux kernel (with its source)
+Requirements
+------------
 
-* __Compilation__:
-  * Just invoke `make` as root
+* gcc
+* A recent Linux kernel (with its source)
 
-* __Testing__:
-  * `insmod parrot_driver.ko debug=1`
-  * `lsmod | grep parrot`
-  * `echo "Yabba Dabba Doo" > /sys/devices/virtual/parrot/parrot_device/fifo`
-  * `cat /dev/parrot_device`
+Compilation
+-----------
 
-* __Notes__:
+* Just invoke `make` as root
+
+Testing
+-------
+
+* `insmod parrot_driver.ko debug=1`
+* `lsmod | grep parrot`
+* `echo "Yabba Dabba Doo" > /sys/devices/virtual/parrot/parrot_device/fifo`
+* `cat /dev/parrot_device`
+
+Notes
+-----
 
 On a Debian system, and if you haven't recompiled a kernel before, you may
 have to issue the following before you can compile and run the driver:
